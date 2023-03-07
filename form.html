@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <h2>Form semplice</h2>
+
+    <form method="POST" action="login.php">
+        <label for="username">Nome utente</label>
+        <input type="text" id="username" placeholder="inserire il nome utente">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <br>
+        <input type="checkbox" id="accetto">
+        <label for="accetto">Accetto le condizioni e i termini d'uso</label>
+        <br>
+        <button type="submit" id="invia">INVIA</button>
+        <button type="reset" id="cancella">CANCELLA</button>
+    </form>
+
+    <hr>
+
+    <h2>Form complesso</h2>
+
+    <form method="GET" action="register.php">
+        <fieldset id="anagrafica">
+            <legend>Anagrafica</legend>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required placeholder="Inserisci il nome">
+            <label for="cognome">Cognome</label>
+            <input type="text" id="cognome" required placeholder="Inserisci il cognome">
+            <br><br>
+            <label for="indirizzo">Indirizzo</label>
+            <input type="text" id="indirizzo" placeholder="Inserisci l'indirizzo">
+            <br><br>
+            <label for="dataNascita">Data di nascita</label>
+            <input type="date" id="dataNascita">
+            <label for="cap">CAP</label>
+            <input type="text" id="cap">
+            <label for="citta">Città</label>
+            <input type="text" id="citta">
+            <label for="provincia">Provincia</label>
+            <input type="text" id="provincia" minlength="2" maxlength="2">
+        </fieldset>
+
+        <fieldset id="contatti">
+            <legend>Dati di contatto</legend>
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required>
+            <br><br>
+            <label for="altri">Altri dati di contatto</label>
+            <textarea id="altri" rows="3" cols="80" placeholder="inserire altri dati di contatto (Whatsapp, Instagram,
+                Facebook...)"></textarea>
+                <label for="password">Password scelta</label>
+                <input type="password" id="password" required minlength="8" maxlength="15">
+                <br><br>
+                <label for="domanda">Domanda segreta (per recupero password)</label>
+
+        </fieldset>
+
+        <fieldset id="preferenze">
+            <legend>Preferenze</legend>
+            <label for="corso">Corso scelto</label>
+            <select id="corso">
+                <option value=""selected></option>
+                <option value="front">Front-End</option>
+                <option value="back">Back-End</option>
+                <option value="full">Full-Stack</option>
+            </select>
+            <p>Linguaggi conosciuti</p>
+            <input type="checkbox" id="html" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="javascript" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="typescript" value="Typescript">
+            <label for="typescript">Typescript</label>
+            <input type="checkbox" id="php" value="php">
+            <label for="php">PHP</label>
+            <input type="checkbox" id="SQL" value="SQL">
+            <label for="sql">SQL</label>
+            <p>Fascia oraria preferita</p>
+            <input type="radio" id="fulltime" name="fascia" value="fulltime">
+            <label for="fulltime">Full Time</label>
+            <input type="radio" id="parttime">
+            <label for="parttime">Part Time</label> 
+            
+
+            </label>
+
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
